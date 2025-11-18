@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Neil Devnani</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="DS Projects.html">DS Projects</a>
+      <a href="socials.html">Socials</a>
+      <a href="soccer.html">Soccer</a>
+    </nav>
+  </header>
+
+    <main>
+    <h2>Data Science Projects</h2>
+    <h3>
+        This page collects a few of my data science projects, which are
+        through <strong>Jupyter Notebooks</strong>. Each imbedded section
+        links directly to the notebook via html export,
+        so you can see the full workflow.
+    </h3>
+
+    <h3>Geomagnetic Predictive Model</h3>
+    <section class="card">    
+    <h4>builds a machine-learning model to predict the Kp geomagnetic index using
+         cleaned and engineered features from raw solar-cycle data. It compares 
+         baseline and tuned models (including KNN) to forecast short-term geomagnetic
+          activity and visualize prediction accuracy.
+    </h4>
+    </section>
+    <iframe
+        src="solar_activity_model (1) (2).html"
+        style="width:100%; height: 500px;; border:none; border-radius:12px;">
+    </iframe>
+
+    <h3>Baby Model Project</h2>
+    <section class="card">
+    <h4>This notebook cleans and prepares a birth dataset, then trains machine-learning
+         models (KNN and Random Forest) to predict infant birthweight from maternal and
+          pregnancy-related features. It evaluates model performance and identifies which
+           factors contribute most to accurate birthweight predictions. 
+    </h3> 
+    </section>
+    <iframe 
+        src="baby_model.html"
+        style="width:100%; height: 500px;; border:none; border-radius:12px;">
+    </iframe>
+
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Neil Devnani | <a href="mailto:devnani.n@northeastern.edu">Contact Me</a></p>
+  </footer>
+</body>
+</html>
