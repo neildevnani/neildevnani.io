@@ -3,13 +3,13 @@
 
 :root{
   /* === 2) Color Scheme === */
-  --bg1:#0f172a;       /* deep slate */
-  --bg2:#111827;       /* soft slate */
-  --card:#0b1220;      /* navy card */
-  --text:#e5e7eb;      /* light text */
-  --muted:#94a3b8;     /* muted text */
-  --accent:#60a5fa;    /* blue */
-  --accent2:#a78bfa;   /* violet */
+  --bg1:#f9f5e8;       /* cream */
+  --bg2:#f0ead8;       /* deeper cream */
+  --card:#e8e4d4;      /* warm beige card */
+  --text:#2d3d26;      /* dark olive text */
+  --muted:#6b7c5e;     /* muted olive-gray */
+  --accent:#4a5e3a;    /* dark olive */
+  --accent2:#8aab76;   /* sage green */
   --radius:16px;
   --maxw:960px;
 }
@@ -28,8 +28,8 @@ html,body{
 header{
   position:sticky; top:0; z-index:10;
   backdrop-filter:blur(6px);
-  background:rgba(11,18,32,.6);
-  border-bottom:1px solid rgba(255,255,255,.06);
+  background:rgba(249,245,232,.85);
+  border-bottom:1px solid rgba(74,94,58,.15);
 }
 nav{
   max-width:var(--maxw);
@@ -49,7 +49,7 @@ nav a:hover{
   transform:translateY(-1px);
   color:#fff;
   background:linear-gradient(90deg,var(--accent),var(--accent2));
-  border-color:rgba(255,255,255,.12);
+  border-color:rgba(74,94,58,.2);
 }
 
 /* Titles */
@@ -71,17 +71,17 @@ main{ max-width:var(--maxw); margin:24px auto 72px; padding:0 18px; }
 @media (min-width:820px){ .grid{ grid-template-columns:2fr 1fr; } }
 
 .card{
-  background:linear-gradient(180deg,var(--card),rgba(17,24,39,.65));
+  background:linear-gradient(180deg,var(--card),rgba(200,188,154,.4));
   border-radius:var(--radius);
-  border:1px solid rgba(255,255,255,.08);
+  border:1px solid rgba(74,94,58,.15);
   padding:22px;
-  box-shadow:0 12px 28px rgba(0,0,0,.25);
+  box-shadow:0 12px 28px rgba(74,94,58,.12);
 }
 .card img{ max-width:100%; border-radius:12px; }
 
 /* Links / Buttons */
 a.inline{ color:var(--accent); }
-a.inline:hover{ color:#fff; text-decoration:underline; }
+a.inline:hover{ color:var(--text); text-decoration:underline; }
 
 .btn{
   display:inline-block;
@@ -89,10 +89,10 @@ a.inline:hover{ color:#fff; text-decoration:underline; }
   border-radius:999px;
   font-weight:700;
   text-decoration:none;
-  color:#001018;
+  color:#fff;
   background:linear-gradient(90deg,var(--accent),var(--accent2));
-  border:1px solid rgba(255,255,255,.15);
-  box-shadow:0 10px 24px rgba(96,165,250,.25);
+  border:1px solid rgba(74,94,58,.2);
+  box-shadow:0 10px 24px rgba(74,94,58,.25);
   transition:transform .14s ease;
 }
 .btn:hover{ transform:translateY(-1px); }
@@ -104,8 +104,8 @@ input,textarea{
   width:100%;
   padding:10px 12px;
   border-radius:10px;
-  border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.06);
+  border:1px solid rgba(74,94,58,.25);
+  background:rgba(255,255,255,.7);
   color:var(--text);
   outline:none;
 }
@@ -118,7 +118,7 @@ footer{
   max-width:var(--maxw);
   margin:0 auto; padding:28px 18px 60px;
   color:var(--muted);
-  border-top:1px solid rgba(255,255,255,.06);
+  border-top:1px solid rgba(74,94,58,.2);
   font-size:14px;
   display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
 }
@@ -130,7 +130,7 @@ footer{
   margin: 20px auto;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(74,94,58,.15);
 }
 
 /* Forces perfect 16:9 framing */
@@ -139,4 +139,3 @@ footer{
   height: 100%;
   object-fit: cover; /* or "contain"—see below */
 }
-
