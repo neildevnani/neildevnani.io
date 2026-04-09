@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DS Projects — Neil Devnani</title>
+  <title>Projects — Neil Devnani</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .project { margin-bottom: 48px; }
@@ -81,13 +81,13 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
-      <a href="DS_Projects.html">DS Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="soccer.html">Soccer</a>
     </nav>
   </header>
 
   <main>
-    <h2>Data Science Projects</h2>
+    <h2>Projects</h2>
     <p style="color:var(--muted); margin-bottom: 36px;">
       A collection of projects spanning interactive visualizations and machine-learning notebooks.
       The notebooks are embedded directly via HTML export so you can see the full workflow.
@@ -138,7 +138,7 @@
       </div>
       <iframe
         class="project-iframe"
-        src="solar_activity_model (1) (2).html"
+        src="notebooks/solar_activity_model (1) (2).html"
         title="Geomagnetic Predictive Model notebook">
       </iframe>
     </section>
@@ -165,8 +165,34 @@
       </div>
       <iframe
         class="project-iframe"
-        src="baby_model.html"
+        src="notebooks/baby_model.html"
         title="Infant Birthweight Prediction notebook">
+      </iframe>
+    </section>
+
+    <!-- Project 4: LIGO Signal Processing -->
+    <section class="project">
+      <div class="card has-iframe project-card">
+        <div class="project-title-row">
+          <span class="project-number">04</span>
+          <h3>LIGO Gravitational Wave Signal Processing</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">Signal Processing</span>
+          <span class="tag">Physics</span>
+          <span class="tag">FFT</span>
+          <span class="tag">Jupyter Notebook</span>
+        </div>
+        <p>
+          Processes raw strain data from the LIGO Hanford and Livingston detectors to detect
+          the GW150914 gravitational wave event. Applies bandpass filtering, whitening, and
+          spectrogram analysis to extract the characteristic chirp signal from noisy detector output.
+        </p>
+      </div>
+      <iframe
+        class="project-iframe"
+        src="notebooks/ligo_signal_processing.html"
+        title="LIGO Gravitational Wave Signal Processing notebook">
       </iframe>
     </section>
   </main>
