@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projects — Neil Devnani</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <style>
     .project { margin-bottom: 48px; }
 
@@ -22,10 +21,9 @@
     }
 
     .project-number {
-      font-family: "Playfair Display", Georgia, serif;
       font-size: 36px;
-      font-weight: 600;
-      color: var(--accent2);
+      font-weight: 700;
+      color: var(--border);
       line-height: 1;
       flex-shrink: 0;
     }
@@ -44,12 +42,12 @@
 
     .tag {
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 500;
       padding: 3px 10px;
-      border-radius: 999px;
-      background: rgba(74, 94, 58, .12);
-      color: var(--accent);
-      border: 1px solid rgba(74, 94, 58, .2);
+      border-radius: 3px;
+      background: #fff;
+      color: var(--muted);
+      border: 1px solid var(--border);
       letter-spacing: .3px;
       text-transform: uppercase;
     }
@@ -62,65 +60,45 @@
     .project-iframe {
       width: 100%;
       height: 520px;
-      border: none;
-      border-radius: 0 0 var(--radius) var(--radius);
       display: block;
-      border-top: 1px solid rgba(74, 94, 58, .1);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 4px 4px;
     }
 
     .card.has-iframe {
-      border-radius: var(--radius) var(--radius) 0 0;
+      border-radius: 4px 4px 0 0;
       border-bottom: none;
     }
   </style>
 </head>
-
 <body>
-  <!-- Navigation -->
+
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="soccer.html">Soccer</a>
+      <a href="index.html" class="nav-name"><strong>Neil</strong> Devnani</a>
+      <div class="nav-links">
+        <a href="index.html">about</a>
+        <a href="projects.html" class="active">projects</a>
+        <a href="resume.html">resume</a>
+        <a href="soccer.html">soccer</a>
+        <a href="socials.html">contact</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <h2>Projects</h2>
-    <p style="color:var(--muted); margin-bottom: 36px;">
+    <p style="color:var(--muted); margin-bottom:36px;">
       A collection of projects spanning interactive visualizations and machine-learning notebooks.
       The notebooks are embedded directly via HTML export so you can see the full workflow.
     </p>
 
-    <!-- Project 1: Neural Network Visualizer -->
-    <section class="project">
-      <div class="card project-card">
-        <div class="project-title-row">
-          <span class="project-number">01</span>
-          <h3>Neural Network Visualizer</h3>
-        </div>
-        <div class="tags">
-          <span class="tag">Interactive</span>
-          <span class="tag">Neural Networks</span>
-          <span class="tag">XOR Problem</span>
-        </div>
-        <p>
-          An interactive visualization of a neural network training on the XOR problem.
-          Shows real-time updates of the decision boundary, loss history, and gradient flow
-          as the network learns.
-        </p>
-        <div>
-          <a class="btn" href="nn_visualizer/index.html" target="_blank">Launch Visualizer →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Project 2: Geomagnetic Predictive Model -->
+    <!-- Project 1: Geomagnetic Predictive Model -->
     <section class="project">
       <div class="card has-iframe project-card">
         <div class="project-title-row">
-          <span class="project-number">02</span>
+          <span class="project-number">01</span>
           <h3>Geomagnetic Predictive Model</h3>
         </div>
         <div class="tags">
@@ -143,11 +121,11 @@
       </iframe>
     </section>
 
-    <!-- Project 3: Baby Model -->
+    <!-- Project 2: Baby Model -->
     <section class="project">
       <div class="card has-iframe project-card">
         <div class="project-title-row">
-          <span class="project-number">03</span>
+          <span class="project-number">02</span>
           <h3>Infant Birthweight Prediction</h3>
         </div>
         <div class="tags">
@@ -170,11 +148,11 @@
       </iframe>
     </section>
 
-    <!-- Project 4: LIGO Signal Processing -->
+    <!-- Project 3: LIGO Signal Processing -->
     <section class="project">
       <div class="card has-iframe project-card">
         <div class="project-title-row">
-          <span class="project-number">04</span>
+          <span class="project-number">03</span>
           <h3>LIGO Gravitational Wave Signal Processing</h3>
         </div>
         <div class="tags">
@@ -195,11 +173,34 @@
         title="LIGO Gravitational Wave Signal Processing notebook">
       </iframe>
     </section>
+
+    <!-- Project 4: Neural Network Visualizer -->
+    <section class="project">
+      <div class="card project-card">
+        <div class="project-title-row">
+          <span class="project-number">04</span>
+          <h3>Neural Network Visualizer</h3>
+        </div>
+        <div class="tags">
+          <span class="tag">Interactive</span>
+          <span class="tag">Neural Networks</span>
+          <span class="tag">XOR Problem</span>
+        </div>
+        <p>
+          An interactive visualization of a neural network training on the XOR problem.
+          Shows real-time updates of the decision boundary, loss history, and gradient flow
+          as the network learns.
+        </p>
+        <div>
+          <a class="btn" href="nn_visualizer/index.html" target="_blank">Launch Visualizer →</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Neil Devnani | <a href="mailto:devnani.n@northeastern.edu">Contact Me</a></p>
+    <p>&copy; 2025 Neil Devnani</p>
   </footer>
-</body>
 
+</body>
 </html>

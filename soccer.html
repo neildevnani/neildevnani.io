@@ -1,76 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Highlights — Neil Devnani</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .video-container {
-      position: relative;
-      width: 100%;
-      max-width: 900px;
-      margin: 20px auto;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .video-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    h2 {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .highlight-title {
-      text-align: center;
-      font-size: 1.3rem;
-      margin-top: 10px;
-      font-weight: 600;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soccer — Neil Devnani</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="soccer.html">Soccer</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-name"><strong>Neil</strong> Devnani</a>
+      <div class="nav-links">
+        <a href="index.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="resume.html">resume</a>
+        <a href="soccer.html" class="active">soccer</a>
+        <a href="socials.html">contact</a>
+      </div>
+    </nav>
+  </header>
 
-<main>
-  <h2>Highlight Reels</h2>
+  <main>
 
-  <p class="highlight-title">2025 Highlights</p>
+    <h1 style="margin-bottom:8px;">Soccer</h1>
+    <p style="color:var(--muted); font-size:14px; margin-bottom:36px;">
+      I play Division I soccer at Northeastern University. Here are some highlight reels.
+    </p>
 
-  <div class="video-container">
+    <p class="section-label">highlights</p>
 
-    <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/R1bCaqBe4hA?si=yL6yJT8SCx_wJ55c"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    <h2 style="border:none; font-size:16px; margin-bottom:12px;">2025 Highlights</h2>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/R1bCaqBe4hA?si=yL6yJT8SCx_wJ55c"
+        title="2025 Soccer Highlights"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-    </iframe>
+  </main>
 
-  </div>
-</main>
-
-<footer>
-  <p>© 2025 Neil Devnani | <a href="mailto:devnani.n@northeastern.edu">Contact Me</a></p>
-</footer>
+  <footer>
+    <p>&copy; 2025 Neil Devnani</p>
+  </footer>
 
 </body>
 </html>

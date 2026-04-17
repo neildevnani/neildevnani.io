@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume — Neil Devnani</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Optional: Makes the PDF take the full width nicely */
     .pdf-container {
       width: 100%;
       height: 90vh;
       margin-top: 20px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      display: block;
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Navigation -->
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="resume.html">Resume</a>
-      <a href="projects.html">Projects</a>
-      <a href="soccer.html">Soccer</a>
+      <a href="index.html" class="nav-name"><strong>Neil</strong> Devnani</a>
+      <div class="nav-links">
+        <a href="index.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="resume.html" class="active">resume</a>
+        <a href="soccer.html">soccer</a>
+        <a href="socials.html">contact</a>
+      </div>
     </nav>
   </header>
 
@@ -31,12 +35,12 @@
     <h2>My Resume</h2>
 
     <p>
-      <a class="btn" href="assets/Neil Devnani Final Resume copy.pdf" target="_blank" download>
+      <a class="btn btn-primary" href="assets/Neil Devnani Final Resume copy.pdf" target="_blank" download>
         Download PDF
       </a>
     </p>
 
-    <iframe 
+    <iframe
       src="assets/Neil Devnani Final Resume copy.pdf"
       class="pdf-container"
       frameborder="0">
@@ -44,7 +48,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Neil Devnani | <a href="mailto:devnani.n@northeastern.edu">Contact Me</a></p>
+    <p>&copy; 2025 Neil Devnani</p>
   </footer>
 
 </body>
